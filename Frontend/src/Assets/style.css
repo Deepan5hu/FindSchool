@@ -1,0 +1,79 @@
+.form-body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+form {
+  background: #fff;
+  margin: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: poppins-light;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form input[type="file"] {
+  padding: 3px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: darkblue;
+}
+
+form span {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+form p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: green;
+}
+
+@media (max-width: 500px) {
+  form {
+    padding: 15px;
+  }
+
+  form input,
+  form button {
+    font-size: 14px;
+  }
+}
