@@ -38,7 +38,7 @@ console.log(req.body);
 
       const query = `INSERT INTO schools(name, address, city, state, contact, image, email_id) VALUES
     ('${name}','${address}', '${city}', '${state}', '${contact}', 
-    'http://localhost:8081/school/getImage/${Uid}_${req.file.originalname}',
+    'https://findschool.onrender.com/school/getImage/${Uid}_${req.file.originalname}',
     '${email_id}')`
 
       const update = connection.query(query, (err, result) => {
