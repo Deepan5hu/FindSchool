@@ -5,8 +5,11 @@ var connection = mysql.createConnection({
   host     : process.env.Host,
   user     : process.env.User,
   password : process.env.Password,
-  database : process.env.Database
-  connectTimeout: 30000
+  database : process.env.Database,
+  connectTimeout: 10000, // 10 seconds
+  acquireTimeout: 10000, // 10 seconds
+  timeout: 10000, // 10 seconds
+  debug: true
 });
 
 connection.connect(function(err) {
