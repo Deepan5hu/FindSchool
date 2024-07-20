@@ -8,7 +8,7 @@ const Port = process.env.Port || 8081;
 app.use(cors());
 app.use(express.json());
 
-/**API */
+
 app.use('/school',Router)
 
 
