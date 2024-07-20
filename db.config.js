@@ -6,6 +6,7 @@ var connection = mysql.createConnection({
   user     : process.env.User,
   password : process.env.Password,
   database : process.env.Database
+  connectTimeout: 30000
 });
 
 connection.connect(function(err) {
